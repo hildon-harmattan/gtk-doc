@@ -1,11 +1,5 @@
-if HAVE_GNOME_DOC_UTILS
 include $(top_srcdir)/build-aux/gnome-doc-utils.make
 dist-hook: doc-dist-hook
-else
-dist-hook:
-	@echo "*** gnome-doc-utils must be installed and enabled in order to make dist"
-	@false
-endif
 
 DOC_MODULE = gtk-doc-manual
 DOC_ENTITIES = fdl-appendix.xml

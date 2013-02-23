@@ -23,7 +23,6 @@ AM_SILENT_RULES([yes])
 
 dnl Forcing a non-null ACTION-IF-NOT-FOUND disables scrollkeeper if
 dnl gnome-doc-utils is not found but does not invalidate the build.
-GNOME_DOC_INIT([],[],enable_scrollkeeper=no)
 
 # Check for programs
 AC_PROG_CC
